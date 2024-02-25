@@ -1,6 +1,10 @@
 import React from 'react';
 import { HiArrowNarrowRight } from 'react-icons/hi';
+import { Link } from 'react-scroll';
+
+
 function Home() {
+
   return (
 
     <div name='home' className='w-full h-screen bg-[#0a192f]'>
@@ -17,17 +21,19 @@ function Home() {
         <p className='text-[#8892b0] py-4 max-w-[700px] mt-4'>
         Passionate about creating innovative solutions and enhancing user experiences, I am a seasoned Software Engineer and Web Developer with a keen eye for detail and a love for problem-solving. My journey in the world of technology began with a fascination for coding, and it has evolved into a dynamic career where I strive to merge creativity with functionality.
         </p>
-        <div>
-          <button className='text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-pink-600 hover:border-pink-600'>
-            View Work
-            <span className='group-hover:rotate-90 duration-300'>
-              <HiArrowNarrowRight className='ml-3 ' />
-            </span>
-          </button>
-        </div>
+        <Link to='work' smooth={true} duration={400}>
+            <div>
+              <button className='text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-pink-600 hover:border-pink-600'>
+                View Work
+                <span className='group-hover:rotate-90 duration-300'>
+                  <HiArrowNarrowRight className='ml-3 ' />
+                </span>
+              </button>
+            </div>
+        </Link>
       </div>
     </div>
   )
 }
 
-export default Home
+export default Home;
