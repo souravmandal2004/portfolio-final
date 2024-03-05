@@ -1,11 +1,11 @@
 import WeatherApp from "../src/Projects/weatherApp.png";
-import ChatBot from "../src/Projects/chatBot.png";
 import StudyNotion from "../src/Projects/studyNotion.png";
 import GifGenerator from "../src/Projects/gifGenerator.png";
 import TopCourses from "../src/Projects/topCourses.png";
 import RazorPay from "../src/Projects/razorPay.png";
+import PasswordGenerator from "../src/Projects/passwordGenerator.png";
 
-export const data=[
+export const data = [
     {
         id:1,
         name:"Weather Application",
@@ -15,10 +15,10 @@ export const data=[
     },
     {
         id:2,
-        name:"Medical Chatbot",
-        image:ChatBot,
-        github:"https://github.com/souravmandal2004/chat-bot.git",
-        live:"https://chat-bot-mandal.netlify.app/",
+        name:"Password Generator",
+        image:PasswordGenerator,
+        github:"https://github.com/souravmandal2004/passwordGenerator.git",
+        live:"https://souravmandal2004.github.io/passwordGenerator/",
     },
     {
         id:3,
